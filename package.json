@@ -1,0 +1,25 @@
+{
+  "name": "scp-driver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanrocket/scp-driver.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryanrocket/scp-driver/issues"
+  },
+  "homepage": "https://github.com/ryanrocket/scp-driver#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "i2c-bus": "^5.2.2",
+    "socket.io": "^4.2.0",
+    "spi-device": "^3.1.2"
+  }
+}
