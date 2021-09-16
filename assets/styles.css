@@ -50,7 +50,7 @@ html, head, body {
     float: right;
     right: 0;
     height: 100%;
-    width: 200px;
+    width: 210px;
     border-left: 1px white solid; 
     text-align: center;
 }
@@ -58,7 +58,7 @@ html, head, body {
     position: relative;
     float: left;
     left: 0;
-    width: 200px;
+    width: 210px;
     height: 100%;
     border-right: 1px white solid;
     text-align: left;
@@ -81,8 +81,21 @@ html, head, body {
 [status="info-l"] {
     color: rgb(197, 197, 241);
 }
+[status="warn"] {
+    color: rgb(255, 165, 47);
+}
+[status="waiting"] {
+    animation: blinkingWait 2s infinite;
+}
 [status="urgent"] {
     animation:blinkingBad 1.5s infinite;
+}
+@keyframes blinkingWait {
+    0% { color: rgb(255, 85, 85); }
+    25% { color: rgb(199, 149, 149); }
+    50% { color: rgb(255, 85, 85); }
+    75% { color: rgb(199, 149, 149); }
+    100% { color: rgb(255, 85, 85); }
 }
 @keyframes blinkingBad{
     0%{     color: rgb(255, 224, 224);    }
@@ -99,7 +112,7 @@ html, head, body {
 }
 .inner-split {
     position: relative;
-    width: 50%;
+    width: 49%;
     height: 100%;
     float: left;
     z-index: 2;
@@ -152,8 +165,8 @@ html, head, body {
     float: left;
 }
 [invert] {
-    -webkit-filter: invert(100%); /* Safari/Chrome */
-    filter: invert(100%);
+    -webkit-filter: invert(80%); /* Safari/Chrome */
+    filter: invert(90%);
 }
 [icon] {
     width: 40px;
@@ -184,6 +197,7 @@ html, head, body {
 }
 .bigdisplay {
     padding-left: 30px;
+    margin-bottom: -20px;
 }
 .speed {
     font-size: 145px;
@@ -206,4 +220,13 @@ html, head, body {
 }
 [ing] {
     font-size: 22px;
+}
+#time {
+    color: rgb(219, 219, 219);
+}
+.img-cont {
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 10px;
 }

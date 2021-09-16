@@ -31,22 +31,22 @@
                 <div class="warner1">
                     <span class="label">net charge</span>
                     <br>
-                    <span class="top-stat" status="good-l">POSITIVE RATE</span>
+                    <span class="top-stat" status="warn">NO SIGNAL</span>
                 </div>
                 <div class="warner1">
                     <span class="label">Telemetry status</span>
                     <br>
-                    <span class="top-stat" status="good-l">NOMINAL</span>
+                    <span class="top-stat" status="warn">NO SIGNAL</span>
                 </div>
                 <div class="warner1">
                     <span class="label">avg. mileage</span>
                     <br>
-                    <span class="top-stat" status="info-l">140 Wh/M</span>
+                    <span class="top-stat" status="info-l">---- Wh/M</span>
                 </div>
                 <div class="warner1">
                     <span class="label">avg. speed</span>
                     <br>
-                    <span class="top-stat" status="info-l">38 MPH</span>
+                    <span class="top-stat" status="info-l">---- MPH</span>
                 </div>
                 <div class="warner1">
                     <span class="label">start time</span>
@@ -58,34 +58,35 @@
                 <div class="warn-split">
                     <div class="bigdisplay">
                         <span id="speed" class="speed">
-                            42
+                            00
                         </span>
                         <span class="unit">
                             MPH
                         </span>
                     </div>
-                    <div class="warn-split">
+                    <hr>
+                    <div class="warn-split" >
                         <div class="warner">
-                            <span class="label">EX. OUTPUT</span>
+                            <span class="label">MOTOR CONS.</span>
                             <br>
-                            <span class="top-stat" style="font-size: 26px!important;" status="info-l">78 WATTS</span>
+                            <span class="top-stat" style="font-size: 26px!important;" status="info-l">---- WATTS</span>
                         </div>
                         <div class="warner">
                             <span class="label">HEADING</span>
                             <br>
-                            <span class="top-stat" style="font-size: 26px!important;" status="info-l">NW</span>
+                            <span class="top-stat" style="font-size: 26px!important;" status="info-l">----</span>
                         </div>
                         <div class="warner">
                             <span class="label">INTERNAL TEMP</span>
                             <br>
-                            <span class="top-stat" style="font-size: 26px!important;" status="info-l">87 F</span>
+                            <span class="top-stat" style="font-size: 26px!important;" status="info-l">---- F</span>
                         </div>
                     </div>
                     <div class="warn-split">
                         <div class="warner">
                             <span class="label">ODO</span>
                             <br>
-                            <span class="top-stat" style="font-size: 26px!important;" status="info-l">148 MILES</span>
+                            <span class="top-stat" style="font-size: 26px!important;" status="info-l">------ MILES</span>
                         </div>
                         <div class="warner">
                             <span class="label">SWAYING</span>
@@ -93,7 +94,7 @@
                             <span class="top-stat" style="font-size: 26px!important;" status="info-l">LVL.</span>
                         </div>
                         <div class="warner">
-                            <span class="label">WARNING</span>
+                            <span class="label">SYS. MESSAGE</span>
                             <br>
                             <span class="top-stat" style="font-size: 26px!important;" status="none">NONE</span>
                         </div>
@@ -112,7 +113,7 @@
                     <span class="stat" id="time" move="10d" style="font-size: 22px!important;"></span>
                 </div>
                 <div id="sys_stat">
-                    <span class="stat" status="good" move="10d">System Ready</span>
+                    <span class="stat" status="waiting" id="sys" move="10d">System Waiting</span>
                 </div>
             </div>
         </div>
