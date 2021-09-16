@@ -22,6 +22,15 @@ app.get("/styles.css", (req, res) => {
 app.get("/front.js", (req, res) => {
     res.sendFile('./assets/front.js', {root: __dirname});
 })
+app.get("/jquery.js", (req, res) => {
+    res.sendFile('./assets/jquery.js', {root: __dirname});
+})
+app.get("/moment.js", (req, res) => {
+    res.sendFile('./assets/moment.js', {root: __dirname});
+})
+app.get("/img/*", (req, res) => {
+    res.sendFile('./img/'+(req.path.split("/")[2]), {root: __dirname})
+})
 
 app.listen(80, () => {console.log("9qskp38ujodr8u8o4r\n");})
 console.log("DONE!\n\n");

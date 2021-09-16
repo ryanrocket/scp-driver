@@ -14,6 +14,9 @@
         <meta name="revisit-after" content="" />
     
         <!-- HeaderSetter > JS Libraries -->
+        <script src="/jquery.js"></script>
+        <script src="/moment.js"></script>
+        <script src="/front.js"></script>
         <!-- HeaderSetter > CSS Libraries -->
         <link rel="stylesheet" href="/styles.css"/>
     </head>
@@ -22,6 +25,91 @@
             <span style="font-size: 200px;font-weight: 700;">A</span><br><br><br>
             <span style="font-size: 32px;">AWAITING SIGNAL</span><br><br><br><br><br>
             <span style="font-size: 20px;">version 1.28 build 14ae</span>
+        </div>
+        <div id="main">
+            <div id="inner">
+                <div class="inner-split" style="border-right: 1px rgb(143, 143, 143) solid;">
+                    <div id="statuses">
+                        <div class="warn-split">
+                            <div class="warner">
+                                <span class="label">Telemetry status</span>
+                                <br>
+                                <span class="top-stat" status="good-l">NOMINAL</span>
+                            </div>
+                            <div class="warner">
+                                <span class="label">Motor status</span>
+                                <br>
+                                <span class="top-stat" status="good-l">NOMINAL</span>
+                            </div>
+                            <div class="warner">
+                                <span class="label">BMS/VUS status</span>
+                                <br>
+                                <span class="top-stat" status="good-l">NOMINAL</span>
+                            </div>
+                            <br>
+                            <div class="warner" style="padding-top: 2px!important;padding-bottom: 0px!important;">
+                                <img icon invert src="/img/headlight.svg"/>
+                                <span class="icon-pair-s" status="info-l">INTERIOR</span>
+                            </div>
+                            <div class="warner" style="padding-top: 0px!important;padding-bottom: 2px!important;">
+                                <img icon invert src="/img/headlight.svg"/>
+                                <span class="icon-pair-s" status="info-l">EXTERIOR</span>
+                            </div>
+                        </div>
+                        <div class="warn-split">
+                            <div class="warner">
+                                <span class="label">avg. mileage</span>
+                                <br>
+                                <span class="top-stat" status="info-l">140 Wh/M</span>
+                            </div>
+                            <div class="warner">
+                                <span class="label">avg. speed</span>
+                                <br>
+                                <span class="top-stat" status="info-l">38 MPH</span>
+                            </div>
+                            <div class="warner">
+                                <span class="label">start time</span>
+                                <br>
+                                <span class="top-stat" status="info-l" id="start_time"></span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div id="warners">
+                        <div class="warn-split">
+                            <div class="warner">
+                                <img icon invert src="/img/ac.svg"/>
+                                <span class="icon-pair" id="acwarn" status="none">A/C CIRC.</span>
+                            </div>
+                            <div class="warner">
+                                <img icon invert src="/img/coffee.svg"/>
+                                <span class="icon-pair" id="swaywarn" status="none">SWAY</span>
+                            </div>
+                        </div>
+                        <div class="warn-split">
+                            <div class="warner">
+                                <img icon invert src="/img/satellite.svg"/>
+                                <span class="icon-pair" id="downwarn" status="none">DOWNLINK</span>
+                            </div>
+                            <div class="warner">
+                                <img icon invert src="/img/thermo.svg"/>
+                                <span class="icon-pair" id="ovhwarn" status="none">OVERHEAT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-split">
+                    
+                </div>
+            </div>
+            <div id="botbar">
+                <div id="sys_time">
+                    <span class="stat" id="time" move="10d" style="font-size: 22px!important;"></span>
+                </div>
+                <div id="sys_stat">
+                    <span class="stat" status="good" move="10d">System Ready</span>
+                </div>
+            </div>
         </div>
     </body>
 </html>

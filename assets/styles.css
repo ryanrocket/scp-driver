@@ -5,8 +5,8 @@ html, head, body {
     position: absolute;
     top:0;
     left: 0;
-    width: 800px;
-    height: 480px;
+    width: 798px;
+    height: 478px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     color: white;
@@ -17,6 +17,193 @@ html, head, body {
     height: 100%;
     z-index: 5;
     text-align: center;
+    background-color: black;
     top:0;
     left:0;
+}
+#main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#topbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px white solid;
+}
+#botbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 1px white solid;
+}
+#sys_stat {
+    position: relative;
+    float: right;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    border-left: 1px white solid; 
+    text-align: center;
+}
+#sys_time {
+    position: relative;
+    float: left;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    border-right: 1px white solid;
+    text-align: left;
+    text-align: center;
+}
+.stat {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+[status="good"] {
+    color: rgb(0, 218, 0);
+}
+[status="good-l"] {
+    color: rgb(163, 228, 163);
+}
+[status="none"] {
+    color: rgb(240, 223, 148);
+}
+[status="info-l"] {
+    color: rgb(197, 197, 241);
+}
+[status="urgent"] {
+    animation:blinkingBad 1.5s infinite;
+}
+@keyframes blinkingBad{
+    0%{     color: rgb(255, 224, 224);    }
+    25%{   color: rgb(255, 10, 10);    }
+    50%{     color: rgb(255, 224, 224);    }
+    75%{   color: rgb(255, 10, 10);    }
+}
+[move="10d"] {
+    position: absolute;
+    padding-top: 13px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.inner-split {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+    z-index: 2;
+}
+#inner {
+    position: relative;
+    height: 427px;
+    width: 100%;
+}
+#inner-b {
+    position: absolute;
+    left: 0;
+    height: 363px;
+    top: 61px;
+    width: 100%;
+}
+#warners {
+    width: 100%;
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    bottom: 0;
+    border-top: rgb(143, 143, 143) 1px solid;
+}
+#statuses {
+    width: 100%;
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    top: 0;
+}
+.warn-split {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.warner {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 179px;
+}
+.warner1 {
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    float: left;
+}
+[invert] {
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
+[icon] {
+    width: 40px;
+}
+.icon-pair {
+    float: right;
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+.icon-pair-s {
+    float: right;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 8px;
+    padding-right: 12px;
+}
+.label {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.top-stat {
+    font-size: 22px;
+    font-weight: 600;
+    
+}
+.bigdisplay {
+    padding-left: 30px;
+}
+.speed {
+    font-size: 145px;
+    font-weight: 600;
+}
+.unit {
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(214, 214, 214);
+}
+.item-display {
+    margin: 10px;
+    padding: 10px;
+    border: 2px white solid;
+    font-size: 18px;
+    height: 85%;
+}
+[bold] {
+    font-weight: 600;
+}
+[ing] {
+    font-size: 22px;
 }

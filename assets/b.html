@@ -14,6 +14,9 @@
         <meta name="revisit-after" content="" />
     
         <!-- HeaderSetter > JS Libraries -->
+        <script src="/jquery.js"></script>
+        <script src="/moment.js"></script>
+        <script src="/front.js"></script>
         <!-- HeaderSetter > CSS Libraries -->
         <link rel="stylesheet" href="/styles.css"/>
     </head>
@@ -22,6 +25,96 @@
             <span style="font-size: 200px;font-weight: 700;">B</span><br><br><br>
             <span style="font-size: 32px;">AWAITING SIGNAL</span><br><br><br><br><br>
             <span style="font-size: 20px;">version 1.28 build 14ae</span>
+        </div>
+        <div id="main">
+            <div id="topbar">
+                <div class="warner1">
+                    <span class="label">net charge</span>
+                    <br>
+                    <span class="top-stat" status="good-l">POSITIVE RATE</span>
+                </div>
+                <div class="warner1">
+                    <span class="label">Telemetry status</span>
+                    <br>
+                    <span class="top-stat" status="good-l">NOMINAL</span>
+                </div>
+                <div class="warner1">
+                    <span class="label">avg. mileage</span>
+                    <br>
+                    <span class="top-stat" status="info-l">140 Wh/M</span>
+                </div>
+                <div class="warner1">
+                    <span class="label">avg. speed</span>
+                    <br>
+                    <span class="top-stat" status="info-l">38 MPH</span>
+                </div>
+                <div class="warner1">
+                    <span class="label">start time</span>
+                    <br>
+                    <span class="top-stat" status="info-l" id="start_time"></span>
+                </div>
+            </div>
+            <div id="inner-b">
+                <div class="warn-split">
+                    <div class="bigdisplay">
+                        <span id="speed" class="speed">
+                            42
+                        </span>
+                        <span class="unit">
+                            MPH
+                        </span>
+                    </div>
+                    <div class="warn-split">
+                        <div class="warner">
+                            <span class="label">EX. OUTPUT</span>
+                            <br>
+                            <span class="top-stat" style="font-size: 26px!important;" status="info-l">78 WATTS</span>
+                        </div>
+                        <div class="warner">
+                            <span class="label">HEADING</span>
+                            <br>
+                            <span class="top-stat" style="font-size: 26px!important;" status="info-l">NW</span>
+                        </div>
+                        <div class="warner">
+                            <span class="label">INTERNAL TEMP</span>
+                            <br>
+                            <span class="top-stat" style="font-size: 26px!important;" status="info-l">87 F</span>
+                        </div>
+                    </div>
+                    <div class="warn-split">
+                        <div class="warner">
+                            <span class="label">ODO</span>
+                            <br>
+                            <span class="top-stat" style="font-size: 26px!important;" status="info-l">148 MILES</span>
+                        </div>
+                        <div class="warner">
+                            <span class="label">SWAYING</span>
+                            <br>
+                            <span class="top-stat" style="font-size: 26px!important;" status="info-l">LVL.</span>
+                        </div>
+                        <div class="warner">
+                            <span class="label">WARNING</span>
+                            <br>
+                            <span class="top-stat" style="font-size: 26px!important;" status="none">NONE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="warn-split">
+                    <div class="item-display">
+                        <b>INCOMING MESSAGES</b>
+                        <hr>
+                        <i>No message received.</i>
+                    </div>
+                </div>
+            </div>
+            <div id="botbar">
+                <div id="sys_time">
+                    <span class="stat" id="time" move="10d" style="font-size: 22px!important;"></span>
+                </div>
+                <div id="sys_stat">
+                    <span class="stat" status="good" move="10d">System Ready</span>
+                </div>
+            </div>
         </div>
     </body>
 </html>
